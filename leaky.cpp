@@ -1,6 +1,7 @@
 #include<iostream>
 #include<unistd.h>
 #include<stdlib.h>
+#include<ctime>
 #define bucketSize 512
 using namespace std;
 void bktInput(int a,int b) {
@@ -20,7 +21,8 @@ while(a>b){
 }
 
 int main( ) {
- int op, pktSize;
+  srand(time(0));
+int op, pktSize;
   cout<<"Enter output rate : "; 
   cin>>op;
 for(int i=1;i<=5;i++){
